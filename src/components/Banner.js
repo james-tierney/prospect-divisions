@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "../assets/avatar.svg";
+import Image from "../assets/croppedPortfolioPic.png";
 import { FaGithub, FaYoutube, FaDribbble, FaGit } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
@@ -54,8 +54,8 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="mb-8 max-w-lg mx-auto lg:mx-0"
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Welcome to JTierney Tech, your one-stop destination for tailored
+              tech solutions
             </motion.p>
             <motion.div
               variants={fadeIn("up", 0.6)}
@@ -77,10 +77,10 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0"
             >
-              <a href="#">
+              <a href="https://www.youtube.com/channel/UCnlPwFxi6PN-Xz5O70dx1Bg">
                 <FaYoutube />
               </a>
-              <a href="#">
+              <a href="https://github.com/james-tierney">
                 <FaGithub />
               </a>
               <a href="#">
@@ -99,7 +99,6 @@ const Banner = () => {
           </motion.div>
         </div>
       </div>
-      Banner
     </section>
   );
 };

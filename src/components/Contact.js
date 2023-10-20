@@ -6,6 +6,9 @@ import { fadeIn } from "../variants";
 
 import emailjs from "@emailjs/browser";
 
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -14,24 +17,42 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    const templateParams = {
+      from_name: name,
+      from_email: email,
+      to_name: "JTierney Tech",
+      message: message,
+    };
+
     emailjs
-      .sendForm(
+      .send(
         "service_t19f9op",
-        "template_4lfqy4b",
-        e.target,
+        "template_vg6e90r",
+        templateParams,
         "S1a-Yuu6Vg0TbaGTc"
       )
       .then(
         (result) => {
           console.log(result.text);
-          alert("Form submitted!");
-          // can add logic here to show a success message popup using Toast???
+
+          // Show a success toast notification
+          toast.success("Form submitted!", {
+            position: "top-right",
+            autoClose: 3000, // Auto-close the toast after 3 seconds
+          });
         },
         (error) => {
           console.log(error.text);
           // Handle errors, show an error message to the user?
+          // Show an error toast notification
+          toast.error("Form submission failed. Please try again later.", {
+            position: "top-right",
+            autoClose: 3000, // Auto-close the toast after 3 seconds
+          });
         }
       );
+
+    // Reset the form fields
     setName("");
     setEmail("");
     setMessage("");

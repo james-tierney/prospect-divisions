@@ -6,7 +6,9 @@ import Nav from "./components/Nav";
 import About from "./components/About";
 import Services from "./components/Services";
 import Work from "./components/Work";
+import Reviews from "./components/Reviews";
 import Contact from "./components/Contact";
+import { toast, ToastContainer } from "react-toastify";
 
 const App = () => {
   return (
@@ -17,8 +19,11 @@ const App = () => {
       <About />
       <Services />
       <Work />
+      <Reviews />
+      {/* Add ToastContainer here */}
+      <ToastContainer />
       <Contact />
-      {/* <div className="h-[4000px]"></div> */}
+      {/* ... rest of your components ... */}
     </div>
   );
 };

@@ -7,21 +7,21 @@ import Image from "../assets/close-up-of-computer-programmer-coding.webp";
 // services data
 const services = [
   {
-    name: "UI/UX Design",
-    description:
-      "Lorem ipsum dolor sit, amet consectetur adispsicing elit. Dolor natus omnis",
-    link: "Learn More",
-  },
-  {
     name: "Web & Mobile Development",
     description:
-      "Lorem ipsum dolor sit, amet consectetur adispsicing elit. Dolor natus omnis",
+      "Bringing Your Ideas to Life in the Digital Realm, From web to mobile, I bring life to your concepts, delivering seamless and responsive experiences. Explore the endless possibilities of web and mobile development.",
     link: "Learn More",
   },
   {
     name: "Software Applications",
     description:
-      "Lorem ipsum dolor sit, amet consectetur adispsicing elit. Dolor natus omnis",
+      "I craft software applications that empower businesses and individuals. With years of experience, I specialize in developing effective solutions to address a wide range of needs, bringing value to every client.",
+    link: "Learn More",
+  },
+  {
+    name: "UI/UX Design",
+    description:
+      "Elevating User Experiences through Innovative Design. I'm dedicated to creating intuitive, user-centric designs that captivate and engage. Discover how thoughtful UI/UX design can transform your digital journey.",
     link: "Learn More",
   },
 ];
@@ -37,7 +37,7 @@ const Services = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
-            className="flex-1 lg:bg- lg:bg-bottom bg-no-repeat mix-blend-lighten mb-12 lg:mb-0"
+            className="flex-1 lg:bg-services lg:bg-bottom bg-no-repeat mix-blend-lighten mb-12 lg:mb-0"
           >
             <h2 className="h2 text-accent mb-6">What I Do</h2>
             <h3 className="h3 max-w-[455px] mb-16">
@@ -57,26 +57,30 @@ const Services = () => {
             {/** service list */}
             <div>
               {services.map((service, index) => {
-                // destructure service array
                 const { name, description, link } = service;
                 return (
                   <div
-                    className="border-b border-white/20 h-[146px] mb-[38px] flex"
+                    className="border-b border-white/20 md:h-[146px] mb-[38px] flex flex-col md:flex-row items-center"
                     key={index}
                   >
-                    <div className="max-w-[476px]">
-                      <h4 className="text-[20px] tracking-wider font-primary font-semidbold mb-6">
+                    <div className="md:max-w-[476px] p-[10px] md:p-[20px]">
+                      <h4 className="text-[20px] tracking-wider font-primary font-semibold mb-3 md:mb-6">
                         {name}
                       </h4>
-                      <p className="font-secondary leading-tight">
+                      <p className="font-secondary text-m leading-normal md:leading-tight whitespace-normal md:whitespace-pre-line max-w-[476px] overflow-hidden">
                         {description}
                       </p>
                     </div>
-                    <div className="flex flex-col flex-1 items-end">
-                      <a href="#" className="btn w-9 h-9 mb-[42px]">
-                        <BsArrowUpRight />
-                      </a>
-                      <a href="#" className="text-gradient text-sm">
+                    <div className="flex flex-col md:flex-row md:flex-1 items-start md:items-center md:items-stretch">
+                      <div className="md:w-9 md:h-9 mt-3 md:mt-0">
+                        <a href="#" className="btn w-9 h-9">
+                          <BsArrowUpRight />
+                        </a>
+                      </div>
+                      <a
+                        href="#"
+                        className="text-gradient text-sm md:self-start md:self-stretch"
+                      >
                         {link}
                       </a>
                     </div>

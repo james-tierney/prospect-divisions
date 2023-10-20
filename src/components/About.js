@@ -28,14 +28,17 @@ const About = () => {
             viewport={{ once: false, amount: 0.3 }}
             className="flex-1"
           >
-            <h2 className="h2 text-accent">Abount Me</h2>
+            <h2 className="h2 text-accent">About Me</h2>
             <h3 className="h3 mb-4">
               I'm a web & mobile app developer and designer with over 4 years
               experience and I currently work as a software engineer.
             </h3>
             <p className="mb-6">
-              Lorem ipsum dolor sit, amet consectetur adispsicing elit. Dolor
-              natus omnis
+              I am dedicated to crafting a personalized web, mobile or software
+              solution that precisely aligns with your unique needs. With my
+              expertise, your project will not only meet but exceed your
+              expectations, ensuring a tailored and effective application for
+              your personal or business requirements
             </p>
             {/**stats */}
             <div className="flex gap-x-6 lg:gap-x-10 mb-12">
@@ -48,24 +51,7 @@ const About = () => {
                   Experience
                 </div>
               </div>
-              <div>
-                <div className="text-[40px] font-tertiary text-gradient mb-2">
-                  {inView ? <CountUp start={0} end={4} duration={5} /> : null}
-                </div>
-                <div className="font-primary text-sm tracking-[2px]">
-                  Years of <br />
-                  Experience
-                </div>
-              </div>
-              <div>
-                <div className="text-[40px] font-tertiary text-gradient mb-2">
-                  {inView ? <CountUp start={0} end={4} duration={3} /> : null}
-                </div>
-                <div className="font-primary text-sm tracking-[2px]">
-                  Years of <br />
-                  Experience
-                </div>
-              </div>
+              <div></div>
             </div>
             <div className="flex gap-x-8 items-center">
               <button className="btn btn-lg">Contact Me</button>
@@ -76,7 +62,6 @@ const About = () => {
           </motion.div>
         </div>
       </div>
-      About
     </section>
   );
 };
