@@ -1,0 +1,54 @@
+/* Styles for the navigation bar */
+.navbar {
+    /* background-color: #333; */
+    padding: 10px;
+}
+
+/* Styles for the navigation list */
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styles for navigation items */
+.nav-item {
+    margin: 0 10px;
+    position: relative;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    display: inline-block;
+    position: relative;
+}
+
+/* Styles for the bar animation under the <a> tags */
+.nav-item a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 5px;
+    width: 0%;
+    /* Set a fixed width for the animation bar */
+    background-color: #2ea2e6;
+    transition: width 0.3s ease;
+    border-radius: 4px;
+    /* Adjust the radius based on your preference */
+}
+
+/* Hover effect - Increase the width of the bar on hover */
+.nav-item a:hover::after {
+    width: 45%;
+    
+    /* Adjust this value based on your preference */
+}
+
+/* Import styles from ButtonWithAnimation.css */
+@import url("./ButtonWithAnimation.css");

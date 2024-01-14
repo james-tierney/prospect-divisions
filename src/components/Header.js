@@ -1,21 +1,21 @@
 import React from "react";
-
-// images
-// import Logo from "../assets/logoSVG.svg";
+import Navbar from "./NavBar";
 
 const Header = () => {
   return (
     <header className="py-8">
       <div className="container mx-auto">
         <div className="flex justify-between items-center">
-          {/** logo */}
-          <div className="text-accent text-xxl">
-            <h4 className="text-logo">JTierney Tech</h4>
-            {/* <a href="#">
-              {/* <img src={Logo} alt="" /> */}
+          {/** Logo */}
+          <h4 className="text-logo">Prospects Divisions</h4>
+
+          {/** Centered Navbar */}
+          <div className="flex items-center">
+            <Navbar />
           </div>
-          {/**button */}
-          <button className="btn btn-sm ">Work with me</button>
+
+          {/** Button */}
+          <button className="btn btn-sm">Book a call</button>
         </div>
       </div>
     </header>

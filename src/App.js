@@ -8,6 +8,8 @@ import Services from "./components/Services";
 import Work from "./components/Work";
 import Reviews from "./components/Reviews";
 import Contact from "./components/Contact";
+import ActiveSlider from "./components/ActiveSlider";
+import ButtonWithAnimation from "./components/ButtonWithAnimation";
 import { toast, ToastContainer } from "react-toastify";
 
 const App = () => {
@@ -23,7 +25,8 @@ const App = () => {
       {/* Add ToastContainer here */}
       <ToastContainer />
       <Contact />
-      {/* ... rest of your components ... */}
+      <ActiveSlider />
+      <ButtonWithAnimation />
     </div>
   );
 };
