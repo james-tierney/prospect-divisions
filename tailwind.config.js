@@ -24,9 +24,13 @@ module.exports = {
         accent: "#B809C3",
       },
       backgroundImage: {
-        site: "url('./assets/site-bg.jpg')",
+        site: "url('./assets/vecteezy_abstract-blue-gradient-background_5433382_cleanup_flipped.svg')",
         about: "url('./assets/deskCode.png')",
         services: "url('./assets/MeAtDesk.png')",
+        slider:
+          "url('./assets/abstract-blue-background-with-beautiful-fluid-shapes-free-vector-flipped.svg')",
+        tester:
+          "url('./assets/abstract-blue-background-with-beautiful-fluid-shapes-free-vector_cleanup.svg')",
       },
     },
   },

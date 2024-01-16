@@ -3,35 +3,45 @@
 @tailwind utilities;
 
 .btn {
-  background: linear-gradient(
-    92.23deg,
-    #ff56f6 21.43%,
-    #b936ee 50.63%,
-    #3bace2 100%,
-    #406aff 117.04%
-  );
-  box-shadow: 0px 4.42184px 107.23px rgba(255, 86, 246, 0.51);
+  background: linear-gradient(92.23deg,
+      #f4e3c3 21.43%,
+      /* Light Beige */
+      #d7b99a 50.63%,
+      /* Beige */
+      #c3a785 100%,
+      /* Dark Beige */
+      #ad9565 117.04%
+      /* Brownish Beige */
+    );
+  box-shadow: 0px 4.42184px 107.23px rgba(244, 227, 195, 0.51);
+  /* Adjusted beige shadow */
 }
 
 .btn:hover {
-  background: linear-gradient(
-    92.23deg,
-    #406aff 21.43%,
-    #3bace2 50.63%,
-    #b936ee 100%,
-    #ff56f6 117.04%
-  );
+  background: linear-gradient(92.23deg,
+      #ad9565 21.43%,
+      /* Brownish Beige */
+      #c3a785 50.63%,
+      /* Dark Beige */
+      #d7b99a 100%,
+      /* Beige */
+      #f4e3c3 117.04%
+      /* Light Beige */
+    );
 }
 
 .gradient,
 .active {
-  background: linear-gradient(
-    92.23deg,
-    #406aff 21.43%,
-    #3bace2 50.63%,
-    #b936ee 100%,
-    #ff56f6 117.04%
-  );
+  background: linear-gradient(92.23deg,
+      #ad9565 21.43%,
+      /* Brownish Beige */
+      #c3a785 50.63%,
+      /* Dark Beige */
+      #d7b99a 100%,
+      /* Beige */
+      #f4e3c3 117.04%
+      /* Light Beige */
+    );
 }
 
 .active {
@@ -42,7 +52,7 @@
 
 @layer base {
   body {
-    @apply font-secondary text-lg leading-8 text-white;
+    @apply font-secondary text-lg leading-8 text-gray-500;
   }
   .h2 {
     @apply font-primary text-[32px] mb-6 tracking-[10%] uppercase;
