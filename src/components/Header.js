@@ -7,7 +7,12 @@ const Header = () => {
       <div className="container mx-auto">
         <div className="flex justify-between items-center">
           {/** Logo */}
-          <h4 className="text-logo">Prospects Divisions</h4>
+          <h4
+            className="text-logo"
+            style={{ fontWeight: "bold", color: "#FFFFFF", fontSize: "2rem" }}
+          >
+            Prospects Divisions
+          </h4>
 
           {/** Centered Navbar */}
           <div className="flex items-center">

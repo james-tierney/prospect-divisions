@@ -10,6 +10,7 @@ import Reviews from "./components/Reviews";
 import Contact from "./components/Contact";
 import ActiveSlider from "./components/ActiveSlider";
 import ButtonWithAnimation from "./components/ButtonWithAnimation";
+import Footer from "./components/Footer";
 import { toast, ToastContainer } from "react-toastify";
 import Image from "./assets/vecteezy_abstract-blue-gradient-background_5433382_cleanup_flipped.jpg";
 
@@ -27,16 +28,17 @@ const App = () => {
         <Banner />
       </div>
       <ActiveSlider />
-      <Nav />
+      {/* <Nav /> */}
       <About />
-      <Services />
-      <Work />
-      <Reviews />
+      {/* <Services /> */}
+      {/* <Work />
+      <Reviews /> */}
       {/* Add ToastContainer here */}
-      <ToastContainer />
-      <Contact />
+      {/* <ToastContainer />
+      <Contact /> */}
       {/* <ActiveSlider /> */}
-      <ButtonWithAnimation />
+      {/* <ButtonWithAnimation /> */}
+      <Footer />
     </div>
   );
 };

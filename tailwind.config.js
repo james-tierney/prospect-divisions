@@ -21,16 +21,21 @@ module.exports = {
     extend: {
       colors: {
         primary: "#0a0a0a",
-        accent: "#B809C3",
+        // accent: "#B809C3",
+        accent: "#d7b99a",
+        secondary: "#FFFFFF",
       },
       backgroundImage: {
+        //site: "url('./assets/black-gold-fluid-shape.jpg')",
         site: "url('./assets/vecteezy_abstract-blue-gradient-background_5433382_cleanup_flipped.svg')",
-        about: "url('./assets/deskCode.png')",
+        about: "url('./assets/black-gold-fluid-shape.jpg')",
+        //about:"url('./assets/vecteezy_blue-fluid-wavy-shapes-background_11116145_cleanup.svg')",
         services: "url('./assets/MeAtDesk.png')",
-        slider:
-          "url('./assets/abstract-blue-background-with-beautiful-fluid-shapes-free-vector-flipped.svg')",
-        tester:
-          "url('./assets/abstract-blue-background-with-beautiful-fluid-shapes-free-vector_cleanup.svg')",
+        //slider:   "url('./assets/abstract-blue-background-with-beautiful-fluid-shapes-free-vector-flipped.svg')",
+        slider: "url('./assets/white-black-wave-flipped.svg')",
+        //tester:  "url('./assets/abstract-blue-background-with-beautiful-fluid-shapes-free-vector_cleanup.svg')",
+        tester: "url('./assets/white-black-wave.svg')",
+        //tester: "url('./assets/white-black-wave.svg')",
       },
     },
   },
