@@ -5,8 +5,8 @@ import { Icons } from "./Menus";
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-white">
-      <div className="md:flex md:justify-between md:items-center sm:px-12 px-4 bg-black py-7">
+    <footer className="bg-[#040404] text-white">
+      <div className="md:flex md:justify-between md:items-center sm:px-12 px-4 bg-[#040404] py-7">
         <h1
           className="lg:text-4xl text-3xl md:mb-0 mb-6 lg:leading-normal font-semibold
          md:w-2/5"
@@ -21,7 +21,7 @@ const Footer = () => {
       <ItemsContainer />
       <div
         className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10
-      text-center pt-2 text-white-400 bg-black text-sm pb-8"
+      text-center pt-2 text-white-400 bg-[#040404] text-sm pb-8"
       >
         <span style={{ fontWeight: "bold", fontSize: "1.25rem" }}>
           © 2024 Prospect Divisions. All rights reserved.

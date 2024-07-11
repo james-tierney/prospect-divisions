@@ -33,12 +33,14 @@ const About = () => {
             viewport={{ once: false, amount: 0.3 }}
             className="flex-1"
           >
-            <h2 className="h2 text-3xl font-bold text-accent">About Me</h2>
-            <h3 className="h3 mb-4">
+            <h2 className="h2 text-3xl font-bold text-accent heading-two">
+              About Us
+            </h2>
+            <h3 className="h3 mb-4 heading-three">
               I'm a web & mobile app developer and designer with over 4 years
               experience and I currently work as a software engineer.
             </h3>
-            <p className="mb-6">
+            <p className="mb-6 text-para">
               I am dedicated to crafting a personalized web, mobile or software
               solution that precisely aligns with your unique needs. With my
               expertise, your project will not only meet but exceed your
@@ -53,7 +55,7 @@ const About = () => {
                     <CountUp start={0} end={1500} duration={3.75} />
                   ) : null}
                 </div>
-                <div className="font-primary text-sm tracking-[2px]">
+                <div className="font-primary text-sm tracking-[2px] text-para">
                   Businesses <br />
                   Scaled
                 </div>
@@ -65,7 +67,7 @@ const About = () => {
                     <CountUp start={0} end={140} duration={3.75} />
                   ) : null}
                 </div>
-                <div className="font-primary text-sm tracking-[2px]">
+                <div className="font-primary text-sm tracking-[2px] text-para">
                   Years of <br />
                   Experience
                 </div>
@@ -77,7 +79,7 @@ const About = () => {
                     <CountUp start={0} end={500} suffix="+" duration={3.75} />
                   ) : null}
                 </div>
-                <div className="font-primary text-sm tracking-[2px]">
+                <div className="font-primary text-sm tracking-[2px] text-para">
                   Businesses <br />
                   Scaled
                 </div>

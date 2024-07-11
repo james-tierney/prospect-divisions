@@ -74,7 +74,7 @@ const Banner = () => {
             >
               <button className="btn btn-lg">Contact Me</button>
               <a href="#" className="text-gradient btn-link">
-                My Portfolio
+                Our Portfolio
               </a>
             </motion.div>
             {/** socials */}
